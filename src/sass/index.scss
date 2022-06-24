@@ -1,4 +1,10 @@
-@import "./common";
+// utils
+
+// base styles
+@import './common';
+@import './reset';
+
+// layouts
 @import './hero-header';
 @import './products';
 @import './about';
@@ -7,5 +13,3 @@
 @import './customer-reviews';
 @import './contacts';
 @import './footer';
-
-
