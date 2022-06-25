@@ -4,3 +4,27 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.section__label {
+    font-family: $secondary-font;
+    font-weight: $secondary-fw;
+    font-size: $uppertitle-fz;
+    line-height: 1.17;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-pink-color;
+}
+
+.section__title {
+    font-family: $secondary-font;
+    font-weight: $secondary-fw;
+    font-size: $primary-title-size;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-red-color;
+
+}
