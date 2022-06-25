@@ -1,0 +1,10 @@
+.section__label--marginProduct {
+    margin-bottom: 15px;
+
+    @include mq('tablet') {
+        margin-bottom: 18px;
+    }
+    @include mq('desktop') {
+        margin-bottom: 16px;
+    }
+}
