@@ -1,0 +1,106 @@
+.about {
+  background-color: $primary-bgc;
+}
+.about__container {
+  @include mq('tablet') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mq('desktop') {
+    background-image: url(../images/about/about-bgc-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq('retina') {
+      background-image: url(../images/about/about-bgc-desktop@2.png);
+    }
+  }
+}
+
+.about__wrapper {
+  @include mq('tablet-only') {
+    margin-left: 32px;
+  }
+  @include mq('desktop') {
+    margin-left: 99px;
+  }
+}
+.text-wrapper {
+  background-image: url(../images/about/about-bgc-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mq('retina') {
+    background-image: url(../images/about/about-bgc-mobile@2.png);
+  }
+
+  @include mq('tablet') {
+    background-image: none;
+  }
+}
+.section__label--margin {
+  margin-bottom: 15px;
+
+  @include mq('tablet') {
+    margin-bottom: 16px;
+  }
+}
+.section__title--margin {
+  margin-bottom: 32px;
+  @include mq('tablet-only') {
+    margin-bottom: 40px;
+  }
+
+  @include mq('desktop') {
+    margin-bottom: 60px;
+  }
+}
+
+.about__description {
+  min-width: 220px;
+  line-height: 1.58;
+  margin-bottom: 35px;
+
+  @include mq('tablet') {
+    font-size: 14px;
+    margin-bottom: 40px;
+    line-height: 1.78;
+  }
+
+  @include mq('desktop') {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.78;
+  }
+}
+
+.about__subdescription {
+  min-width: 220px;
+  color: $text-light-color;
+  line-height: 1.58;
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+
+  @include mq('tablet') {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+}
+
+.button {
+  height: 44px;
+  //   width: 176px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  padding-left: 37px;
+  padding-right: 56px;
+  border: transparent;
+}
+
+.button-text {
+  color: $primary-red-color;
+  font-size: 14px;
+  font-weight: 700;
+}
