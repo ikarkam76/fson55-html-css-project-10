@@ -3,10 +3,22 @@
     height: 502px;
     background-color: #FFB8CA;
 
+    @include mq('tablet') {
+        height: 416px;
+
+    }
+
     .container {
         padding-top: 8px;
         position: relative;
         height: 100%;
+
+        @include mq('tablet-only') {
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+
+        }
     }
 }
 
@@ -20,7 +32,12 @@
     position: absolute;
     right: 20px;
     top: 27px;
+
     // display: none;
+    @include mq('tablet') {
+        right: 224px;
+        top: 46px;
+    }
 }
 
 .header__menu {
@@ -38,7 +55,26 @@
 }
 
 .header__btn-buy {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D41443;
+    background-color: #FFFFFF;
+    padding: 12px 35px;
+    border-radius: 22px;
+
     display: none;
+
+    @include mq('tablet') {
+        display: inline-block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+}
+
+.icon-arrow {
+    margin-left: 12px;
 }
 
 .header__btn-products,
@@ -67,16 +103,23 @@
 }
 
 // ICECREAM-WRAPPER
-.icecream-wrapper {
+.icecream__wrapper {
     position: absolute;
     right: 0;
+    bottom: 0;
     width: 300px;
     height: 419px;
-    bottom: 0;
+
     overflow: hidden;
+
+    @include mq('tablet') {
+        width: 334px;
+        right: 185px;
+        height: 373px;
+    }
 }
 
-.icecream-background {
+.icecream__background {
     position: absolute;
     left: 15px;
     width: 345px;
@@ -84,13 +127,51 @@
     border-radius: 50%;
     background-color: #FFA5BA;
     z-index: 1;
+
+    @include mq('tablet') {
+        left: 0;
+        height: 334px;
+        width: 334px;
+    }
 }
 
-.icecream {
+.icecream__img {
     position: absolute;
     left: 81px;
     bottom: -75px;
     z-index: 2;
+
+    @include mq('tablet') {
+        left: 74px;
+        bottom: -40px;
+    }
+}
+
+// GIRL-WRAPPER
+.girl__wrapper {
+    display: none;
+
+    @include mq('tablet') {
+        display: block;
+        position: absolute;
+        right: 32px;
+        bottom: 1px;
+        z-index: 2;
+    }
+}
+
+// NUMBERS-WRAPPER
+.numbers__wrapper {
+    display: none;
+
+    @include mq('tablet') {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 92px;
+        right: 32px;
+    }
 }
 
 // TITLE
@@ -108,6 +189,12 @@
     color: #FFFFFF;
 
     z-index: 3;
+
+    @include mq('tablet') {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 25px;
+    }
 }
 
 .header__title--second {
@@ -115,4 +202,9 @@
     line-height: 96.5%;
     text-transform: uppercase;
     color: #D41443;
+
+    @include mq('tablet') {
+        font-size: 34px;
+        line-height: 90.5%;
+    }
 }
