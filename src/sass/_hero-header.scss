@@ -1,22 +1,19 @@
 // HEADER
 .header {
     height: 502px;
-    padding-top: 8px;
     background-color: #FFB8CA;
 
-
     .container {
+        padding-top: 8px;
         position: relative;
         height: 100%;
     }
 }
 
 // NAV
-.nav {
+.header__nav {
     display: none;
 }
-
-
 
 // MENU
 .menu__btn-open {
@@ -26,27 +23,54 @@
     // display: none;
 }
 
-.menu {
+.header__menu {
     display: none;
 }
 
 // BUTTONS
-button {
+.btn {
     display: inline-block;
     padding: 0;
     margin: 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
-.btn-buy {
+.header__btn-buy {
     display: none;
 }
 
-// icecream-wrapper
+.header__btn-products,
+.header__btn-howmade {
+    position: relative;
+
+    padding: 8px 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 400;
+
+    z-index: 3;
+}
+
+.header__btn-products {
+    color: #FFFFFF;
+    background-color: #D41443;
+}
+
+.header__btn-howmade {
+    color: #D41443;
+    background-color: #FFFFFF;
+    margin-left: 8px;
+}
+
+// ICECREAM-WRAPPER
 .icecream-wrapper {
     position: absolute;
-    width: 100vw;
+    right: 0;
+    width: 300px;
     height: 419px;
     bottom: 0;
     overflow: hidden;
@@ -54,16 +78,41 @@ button {
 
 .icecream-background {
     position: absolute;
-    left: 50%;
-    transform: translateX(-35%);
-    width: 346px;
-    height: 344px;
+    left: 15px;
+    width: 345px;
+    height: 345px;
     border-radius: 50%;
     background-color: #FFA5BA;
+    z-index: 1;
 }
 
 .icecream {
     position: absolute;
     left: 81px;
     bottom: -75px;
+    z-index: 2;
+}
+
+// TITLE
+.header__title {
+    position: relative;
+
+    margin-top: 136px;
+
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    z-index: 3;
+}
+
+.header__title--second {
+    font-size: 48px;
+    line-height: 96.5%;
+    text-transform: uppercase;
+    color: #D41443;
 }
