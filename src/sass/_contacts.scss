@@ -1,13 +1,20 @@
 .section__color{
     background-color: #FFF5F6;
+    margin-bottom: 40px;
 }
 .contacts{
-    margin-bottom: -94px;
+    margin-top: -302px;
     margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 280px;
+    // width: 280px;
+    @include mq('tablet'){
+        margin-top: -298px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 }
 .contacts__box{
     padding: 40px 32px;
@@ -19,8 +26,24 @@
     background-color: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    &:not(:last-child){
+    @include mq('mobile'){
         margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+            
+
+        }
+    }
+   
+    @include mq('tablet'){
+        margin-bottom: 0;
+        margin-right: 32px;
+        width: 224px;
+    }
+}
+.contacts__item:last-child{
+    @include mq('tablet'){
+        margin-right: 0;
     }
 }
 .cafe__title{
@@ -40,6 +63,24 @@ color: #FFFFFF;
     background-color:  #F0D1A5;
     
 }
+.foodtruck__title{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.86;
+align-items: center;
+text-align: center;
+width: 130px;
+margin-bottom: 8px;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+background-color:  #C2E297;
+border-radius: 4px;
+@include mq('tablet'){
+    margin-bottom: 20px;
+}
+}
 .thumb__title{
     font-family: 'DM Sans';
 font-style: normal;
@@ -47,7 +88,7 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.86;
 letter-spacing: 0.04em;
-
+margin-bottom: 8px;
 color: #000000;
 }
 .about__text{
@@ -64,6 +105,7 @@ border-bottom:  1px solid #E1E1E1;
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom:  1px solid #E1E1E1;
+    margin-bottom: 24px;
     
 }
 .date{
@@ -80,18 +122,85 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 1.86;
-
+margin-bottom: 8px;
 
 
 color: #FFA5BA;
 
 }
-.thumb__contacts{
+// .thumb__contacts{
+  
+// }
+.tel,
+.mail{
     font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 1.5;
-color: #907E82;
-padding-bottom: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+}
+.contacts__buttons{
+    display: block;
+    text-align: center;
+    @include mq('tablet'){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+  
+}
+.contacts__button--locations{
+    background-color: #D41342;
+    border-radius: 22px;
+    color: #D41342;
+    width: 161px;
+    height: 44px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 32px;
+    @include mq('tablet'){
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 14.5px;
+    }
+
+}
+.contacts__button--locations a{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+   
+    align-items: center;
+    text-align: center;
+   
+    color: #FFFFFF;
+    border-color:  #D41342;
+}
+
+.contacts__button--franchise{
+    background-color: #FFFFFF;
+border-radius: 22px;
+width: 161px;
+height: 44px;
+border:none;
+@include mq('tablet'){
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+.contacts__button--franchise a{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    
+    align-items: center;
+    text-align: center;
+    
+    color: #D41443;
 }
