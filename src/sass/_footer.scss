@@ -1,0 +1,137 @@
+.footer {
+  background-color: #fff5f6;
+}
+.footer.container {
+  text-align: center;
+  justify-content: space-around;
+  align-items: baseline;
+  @include mq('mobile') {
+  }
+
+  @include mq('tablet') {
+  }
+
+  @include mq('desktop') {
+  }
+}
+.footer-title {
+}
+.footer-title__text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+.footer-title__text-two {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 16px;
+
+  color: #d41443;
+}
+.footer-menu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include mq('tablet') {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include mq('desktop') {
+    padding-top: 121px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu {
+  margin-top: 40px;
+  @include mq('tablet') {
+    margin-top: 0px;
+  }
+}
+.social-network__button-menu {
+  display: flex;
+  justify-content: end;
+}
+.social-network__icon {
+}
+.social-network__button {
+  width: 34px;
+  height: 34px;
+  background: #fea5bb;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background: #d41443;
+    fill: #fff;
+  }
+  &:focus {
+    background: #d41443;
+    fill: #fff;
+  }
+}
+.social-network__icon:not(:last-child) {
+  margin-right: 28.24px;
+}
+.social-network__button-icon {
+  fill: #fff;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.footer-menu-adress__item {
+}
+.footer-menu-adress {
+  display: flex;
+  margin-top: 40px;
+}
+.footer-menu-adress__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #000000;
+}
+.footer-menu-adress__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #d41443;
+}
+.developer {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #907e82;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+}
