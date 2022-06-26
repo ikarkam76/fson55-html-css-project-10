@@ -1,0 +1,69 @@
+// HEADER
+.header {
+    height: 502px;
+    padding-top: 8px;
+    background-color: #FFB8CA;
+
+
+    .container {
+        position: relative;
+        height: 100%;
+    }
+}
+
+// NAV
+.nav {
+    display: none;
+}
+
+
+
+// MENU
+.menu__btn-open {
+    position: absolute;
+    right: 20px;
+    top: 27px;
+    // display: none;
+}
+
+.menu {
+    display: none;
+}
+
+// BUTTONS
+button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-buy {
+    display: none;
+}
+
+// icecream-wrapper
+.icecream-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 419px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.icecream-background {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35%);
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: #FFA5BA;
+}
+
+.icecream {
+    position: absolute;
+    left: 81px;
+    bottom: -75px;
+}
