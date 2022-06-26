@@ -1,0 +1,40 @@
+// HEADER
+.header {
+    background-color: #FFB8CA;
+
+    .container {
+        position: relative;
+    }
+}
+
+// NAV
+.nav {
+    display: none;
+}
+
+
+
+// MENU
+.menu__btn-open {
+    position: absolute;
+    right: 20px;
+    top: 27px;
+    // display: none;
+}
+
+.menu {
+    display: none;
+}
+
+// BUTTONS
+button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-buy {
+    display: none;
+}
