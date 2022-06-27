@@ -1,13 +1,17 @@
 .section__color{
     background-color: #FFF5F6;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    // @include mq('desktop'){
+    //     align-items: center;
+    //     justify-content: center;
+    // }
 }
 .contacts{
     margin-top: -302px;
     margin-right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
     // width: 280px;
     @include mq('tablet'){
         margin-top: -298px;
@@ -18,6 +22,9 @@
 }
 .contacts__box{
     padding: 40px 32px;
+    @include mq ('desktop'){
+        padding: 40px;
+    }
 }
 
 .contacts__item{
@@ -26,181 +33,234 @@
     background-color: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    @include mq('mobile'){
-        margin-bottom: 20px;
-        &:last-child{
-            margin-bottom: 0;
-            
-
-        }
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
     }
+    
    
     @include mq('tablet'){
         margin-bottom: 0;
         margin-right: 32px;
         width: 224px;
     }
+    @include mq('desktop'){
+        
+        width: 368px;
+        margin-right: 32px;
+    }
 }
 .contacts__item:last-child{
     @include mq('tablet'){
         margin-right: 0;
+
+    }
+    @include mq('desktop'){
+        margin-right: 0;
     }
 }
-.cafe__title{
-    font-family: 'DM Sans';
+.contacts__title{
 font-style: normal;
-font-weight: 500;
-font-size: 12px;
 line-height: 186%;
 text-align: center;
 margin-bottom: 20px;
-width: 80px;
-align-items: center;
-border-radius: 4px;
-letter-spacing: 0.04em;
 
-color: #FFFFFF;
-    background-color:  #F0D1A5;
-    
-}
-.foodtruck__title{
-    font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 1.86;
 align-items: center;
-text-align: center;
-width: 130px;
-margin-bottom: 8px;
+border-radius: 4px;
 letter-spacing: 0.04em;
 color: #FFFFFF;
-background-color:  #C2E297;
-border-radius: 4px;
-@include mq('tablet'){
-    margin-bottom: 20px;
+
+    @include mq ('tablet'){
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.86;
+    }
+    @include mq('desktop'){
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.86;
+    }
 }
+.contacts__title--brown{
+    background-color:  #F0D1A5;
+    width: 80px;
 }
+.contacts__title--green{
+    width: 130px;
+    background-color:  #C2E297;
+}
+// .foodtruck__title{
+// font-style: normal;
+// line-height: 1.86;
+// align-items: center;
+// text-align: center;
+
+// margin-bottom: 20px;
+// letter-spacing: 0.04em;
+// color: #FFFFFF;
+
+// border-radius: 4px;
+// @include mq('tablet'){
+//     margin-bottom: 32px;
+//     font-size: 16px;
+//         line-height: 1.86;
+// }
+// }
 .thumb__title{
-    font-family: 'DM Sans';
 font-style: normal;
-font-weight: 500;
-font-size: 12px;
 line-height: 1.86;
 letter-spacing: 0.04em;
 margin-bottom: 8px;
-color: #000000;
+  @include mq('tablet'){
+    font-size: 14px;
+  }
+  @include mq('desktop'){
+    font-size: 16px;
+  }
 }
 .about__text{
-    font-family: 'DM Sans';
 font-style: normal;
-font-weight: 500;
-font-size: 12px;
 line-height: 1.5;
 color: #907E82;
 padding-bottom: 24px;
 border-bottom:  1px solid #E1E1E1;
+    @include mq('tablet'){
+        font-size: 14px;
+        padding-bottom: 32px;
+        line-height: 1.66;
+    }
+    @include mq('desktop'){
+        padding-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.83;
+    }
 }
 .thumb__work-schedule{
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom:  1px solid #E1E1E1;
     margin-bottom: 24px;
-    
+    @include mq ('desktop'){
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
 }
-.date{
-    font-family: 'DM Sans';
+.date{   
 font-style: normal;
-font-weight: 500;
-font-size: 12px;
 line-height: 1.86;
-color: #000000;
+    @include mq('tablet'){
+        font-size: 14px;
+        line-height: 1.86;
+    }
+    @include mq('desktop'){
+        font-size: 16px;
+
+    }
 }
 .time{
-    font-family: 'DM Sans';
+   
 font-style: normal;
-font-weight: 500;
-font-size: 12px;
 line-height: 1.86;
-margin-bottom: 8px;
 
-
-color: #FFA5BA;
-
+color:$text-pink-color;
+    @include mq('tablet'){
+        font-size: 14px;
+        line-height: 1.86;
+    }
+    @include mq ('desktop'){
+        font-size: 16px;
+    }
 }
-// .thumb__contacts{
-  
-// }
+.thumb__contacts{
+  display: flex;
+  flex-direction: column;
+}
+.time--margin{
+    margin-top: 0;
+    margin-bottom: 8px;
+    @include mq('tablet'){
+        margin-bottom: 12px;
+    }
+    @include mq('desktop'){
+        margin-bottom: 12px;
+    }
+}
 .tel,
 .mail{
-    font-family: 'DM Sans';
+    &:hover,
+    &:focus{
+        color:  #D41443;
+        
+    }
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
     line-height: 1.5;
-    color: #907E82;
+    color:$text-light-color;
+
+    @include mq('tablet'){
+        font-size: 14px;
+        line-height: 1.83;
+    }
+    @include mq ('desktop'){
+        font-size: 16px;
+        line-height: 1.83;
+    }
 }
+
 .contacts__buttons{
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    
     @include mq('tablet'){
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-top: 60px;
     }
   
 }
-.contacts__button--locations{
-    background-color: #D41342;
-    border-radius: 22px;
-    color: #D41342;
+.location{
     width: 161px;
     height: 44px;
-    border: none;
-    margin-bottom: 10px;
     margin-top: 32px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #D41342;
+   
     @include mq('tablet'){
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 14.5px;
+        margin-right: 14px;
+    }
+}
+.location a{
+    color: $primary-white-color;
+}
+.franchise{
+    background-color: #FFFFFF;
+    
+    &:hover,
+    &:focus{
+        background-color: $btn-pale-accent;
     }
 
 }
-.contacts__button--locations a{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-   
-    align-items: center;
-    text-align: center;
-   
-    color: #FFFFFF;
-    border-color:  #D41342;
+.franchise a{
+    color: $primary-red-color;
 }
-
-.contacts__button--franchise{
-    background-color: #FFFFFF;
-border-radius: 22px;
-width: 161px;
-height: 44px;
-border:none;
-@include mq('tablet'){
-    margin-top: 0;
-    margin-bottom: 0;
-}
-}
-.contacts__button--franchise a{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
+.location .arrow{
+    margin-left: 13.6px;
+    width: 4.43px;
+    height: 8px;
     
-    align-items: center;
-    text-align: center;
+}
+.franchise .arrow{
+    margin-left: 12.7px;
+    width: 4.43px;
+    height: 8px;
     
-    color: #D41443;
 }

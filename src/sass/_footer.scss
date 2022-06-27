@@ -15,6 +15,14 @@
   }
 }
 .footer-title {
+  width: 232px;
+  @include mq('tablet') {
+    width: 340px;
+  }
+
+  @include mq('desktop') {
+    width: 472px;
+  }
 }
 .footer-title__text {
   font-family: 'Titan One';
@@ -25,6 +33,18 @@
   text-transform: uppercase;
 
   color: #ffa5ba;
+  @include mq('mobile') {
+  }
+
+  @include mq('tablet') {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @include mq('desktop') {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 .footer-title__text-two {
   font-family: 'Titan One';
@@ -37,6 +57,18 @@
   margin-top: 16px;
 
   color: #d41443;
+  @include mq('mobile') {
+  }
+
+  @include mq('tablet') {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @include mq('desktop') {
+    font-size: 58px;
+    line-height: 1.13;
+  }
 }
 .footer-menu {
   padding-top: 40px;
@@ -56,6 +88,17 @@
 .menu {
   margin-top: 40px;
   @include mq('tablet') {
+  }
+
+  @include mq('desktop') {
+    margin-top: 0px;
+  }
+}
+.social-network {
+  @include mq('tablet') {
+    margin-top: 30px;
+  }
+  @include mq('desktop') {
     margin-top: 0px;
   }
 }
@@ -105,6 +148,7 @@
 .footer-menu-adress {
   display: flex;
   margin-top: 40px;
+  justify-content: end;
 }
 .footer-menu-adress__text {
   font-family: 'DM Sans';
@@ -114,24 +158,53 @@
   line-height: 186%;
   text-align: right;
   color: #000000;
+
+  @include mq('tablet') {
+    font-size: 14px;
+    line-height: 186%;
+  }
+
+  @include mq('desktop') {
+    font-size: 16px;
+    line-height: 186%;
+  }
 }
 .footer-menu-adress__link {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.02em;
   color: #d41443;
+  @include mq('tablet') {
+    font-size: 14px;
+    line-height: 186%;
+  }
+
+  @include mq('desktop') {
+    font-size: 16px;
+    line-height: 186%;
+  }
 }
 .developer {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 186%;
+  line-height: 152%;
   letter-spacing: 0.02em;
   color: #907e82;
   text-align: center;
   border-top: 1px solid #e1e1e1;
+
+  @include mq('tablet') {
+    font-size: 14px;
+    line-height: 186%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include mq('desktop') {
+  }
 }

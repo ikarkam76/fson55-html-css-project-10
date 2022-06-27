@@ -13,7 +13,7 @@
           ./images/about/about-desktop-501.png   501w,
           ./images/about/about-desktop-1002.png 1002w
         "
-        sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 320px) 280px, 100vw"
+        sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, (min-width: 480px) 280px, 100vw"
         src="./images/about/about-mobile-280.png"
         alt="cow with milk"
       />
@@ -35,9 +35,11 @@
             Aliquam erat volutpat. Aenean accumsan.
           </p>
         </div>
-
-        <button class="button" type="button">
-          <span class="button-text">Read more</span>
+        <button class="button button--white" type="button">
+          <span class="button__text button__text--red">Read more</span>
+          <svg class="button__icon button__icon--red" width="8" height="10">
+            <use href="./images/sprite.svg#arrow"></use>
+          </svg>
         </button>
       </div>
     </div>
