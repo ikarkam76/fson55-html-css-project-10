@@ -1,6 +1,6 @@
 .section__color{
     background-color: #FFF5F6;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     // @include mq('desktop'){
     //     align-items: center;
     //     justify-content: center;
@@ -9,9 +9,9 @@
 .contacts{
     margin-top: -302px;
     margin-right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
     // width: 280px;
     @include mq('tablet'){
         margin-top: -298px;
@@ -59,44 +59,53 @@
         margin-right: 0;
     }
 }
-.cafe__title{
+.contacts__title{
 font-style: normal;
 line-height: 186%;
 text-align: center;
 margin-bottom: 20px;
-width: 80px;
+
 align-items: center;
 border-radius: 4px;
 letter-spacing: 0.04em;
 color: #FFFFFF;
-background-color:  #F0D1A5;
+
     @include mq ('tablet'){
         margin-bottom: 32px;
         font-size: 16px;
         line-height: 1.86;
     }
     @include mq('desktop'){
+        margin-bottom: 32px;
         font-size: 16px;
         line-height: 1.86;
     }
 }
-.foodtruck__title{
-font-style: normal;
-line-height: 1.86;
-align-items: center;
-text-align: center;
-width: 130px;
-margin-bottom: 20px;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-background-color:  #C2E297;
-border-radius: 4px;
-@include mq('tablet'){
-    margin-bottom: 32px;
-    font-size: 16px;
-        line-height: 1.86;
+.contacts__title--brown{
+    background-color:  #F0D1A5;
+    width: 80px;
 }
+.contacts__title--green{
+    width: 130px;
+    background-color:  #C2E297;
 }
+// .foodtruck__title{
+// font-style: normal;
+// line-height: 1.86;
+// align-items: center;
+// text-align: center;
+
+// margin-bottom: 20px;
+// letter-spacing: 0.04em;
+// color: #FFFFFF;
+
+// border-radius: 4px;
+// @include mq('tablet'){
+//     margin-bottom: 32px;
+//     font-size: 16px;
+//         line-height: 1.86;
+// }
+// }
 .thumb__title{
 font-style: normal;
 line-height: 1.86;
