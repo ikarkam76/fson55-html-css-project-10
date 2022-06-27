@@ -47,8 +47,9 @@
         content: '';
 
         position: absolute;
-        top: -140px;
-        left: 0;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
 
         display: block;
         width: 280px;
@@ -94,6 +95,7 @@
         &::before {
             width: 224px;
             height: 224px;
+            top: -6%;
         }
         &:nth-child(1):before {
             background-image: url(../images/product/product-img1_md.png);
@@ -119,7 +121,7 @@
         padding: 165px 63px 60px 64px;
 
         &::before {
-            top: -260px;
+            top: -12%;
 
             width: 368px;
             height: 394px;
