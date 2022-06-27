@@ -29,6 +29,14 @@
 .gallery__foto {
     display: block;
     width: 100%;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    
+    &:hover, 
+    &:focus {
+        transform: scale(1.2);
+    }
 }
 
 .foto5 {
