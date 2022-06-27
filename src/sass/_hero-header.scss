@@ -1,11 +1,14 @@
 // HEADER
 .header {
     height: 502px;
-    background-color: #FFB8CA;
+    background-color: $header-bgc;
 
     @include mq('tablet') {
         height: 416px;
+    }
 
+    @include mq('desktop') {
+        height: 664px;
     }
 
     .container {
@@ -17,14 +20,50 @@
             padding-top: 32px;
             padding-left: 32px;
             padding-right: 32px;
+        }
 
+        @include mq('desktop') {
+            padding-top: 37px;
         }
     }
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
 }
 
 // NAV
 .header__nav {
     display: none;
+    z-index: 2;
+
+    @include mq('desktop') {
+        display: block;
+        margin-left: 128px;
+    }
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    &:not(:last-child) {
+        margin-right: 35px;
+    }
+}
+
+.nav__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $primary-white-color;
+
+    &:hover,
+    &:focus {
+        color: $primary-red-color;
+    }
 }
 
 // MENU
@@ -36,8 +75,13 @@
     // display: none;
     @include mq('tablet') {
         right: 224px;
-        top: 46px;
+        top: 45px;
     }
+
+    @include mq('desktop') {
+        display: none;
+    }
+
 }
 
 .header__menu {
@@ -46,7 +90,6 @@
 
 // BUTTONS
 .btn {
-    display: inline-block;
     padding: 0;
     margin: 0;
     background-color: transparent;
@@ -55,21 +98,23 @@
 }
 
 .header__btn-buy {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #D41443;
-    background-color: #FFFFFF;
-    padding: 12px 35px;
-    border-radius: 22px;
-
     display: none;
 
     @include mq('tablet') {
         display: inline-block;
-        position: absolute;
-        top: 32px;
-        right: 32px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: $primary-red-color;
+        background-color: $primary-white-color;
+        border-radius: 22px;
+        padding: 12px 35px;
+        margin-left: auto;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $btn-pale-accent;
     }
 }
 
@@ -80,26 +125,41 @@
 .header__btn-products,
 .header__btn-howmade {
     position: relative;
-
     padding: 8px 15px;
     margin-top: 20px;
     border-radius: 20px;
     font-size: 8px;
     line-height: 10px;
     font-weight: 400;
-
     z-index: 3;
+
+    @include mq('desktop') {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 24px;
+        padding: 11px 22px;
+    }
 }
 
 .header__btn-products {
-    color: #FFFFFF;
-    background-color: #D41443;
+    color: $primary-white-color;
+    background-color: $primary-red-color;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-red-accent;
+    }
 }
 
 .header__btn-howmade {
-    color: #D41443;
-    background-color: #FFFFFF;
+    color: $primary-red-color;
+    background-color: $primary-white-color;
     margin-left: 8px;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-pale-accent;
+    }
 }
 
 // ICECREAM-WRAPPER
@@ -109,13 +169,18 @@
     bottom: 0;
     width: 300px;
     height: 419px;
-
     overflow: hidden;
 
     @include mq('tablet') {
         width: 334px;
         right: 185px;
         height: 373px;
+    }
+
+    @include mq('desktop') {
+        width: 534px;
+        right: 149px;
+        height: 611px;
     }
 }
 
@@ -125,13 +190,18 @@
     width: 345px;
     height: 345px;
     border-radius: 50%;
-    background-color: #FFA5BA;
+    background-color: $text-pink-color;
     z-index: 1;
 
     @include mq('tablet') {
         left: 0;
         height: 334px;
         width: 334px;
+    }
+
+    @include mq('desktop') {
+        width: 534px;
+        height: 534px;
     }
 }
 
@@ -145,6 +215,11 @@
         left: 74px;
         bottom: -40px;
     }
+
+    @include mq('desktop') {
+        left: 119px;
+        bottom: -77px;
+    }
 }
 
 // GIRL-WRAPPER
@@ -157,6 +232,10 @@
         right: 32px;
         bottom: 1px;
         z-index: 2;
+    }
+
+    @include mq('desktop') {
+        right: 16px;
     }
 }
 
@@ -172,22 +251,97 @@
         top: 92px;
         right: 32px;
     }
+
+    @include mq('desktop') {
+        top: 152px;
+        left: 16px;
+    }
+}
+
+.numbers__icon-16 {
+    width: 43px;
+    height: 44px;
+
+    @include mq('desktop') {
+        width: 72px;
+        height: 77px;
+    }
+}
+
+.numbers__icon-43 {
+    width: 51px;
+    height: 43px;
+
+    @include mq('desktop') {
+        width: 92px;
+        height: 76px;
+    }
+}
+
+// MILK-WRAPPER
+.milk__wrapper {
+    display: none;
+
+    @include mq('tablet') {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    @include mq('desktop') {
+        margin-top: 40px;
+    }
+}
+
+.milk__text {
+    margin-top: 41px;
+    width: 114px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $primary-white-color;
+
+    @include mq('desktop') {
+        width: 200px;
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 70px;
+    }
+
+}
+
+.milk__btn {
+    position: absolute;
+    left: 152px;
+    top: 100px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/product/product-arrow.png);
+    background-size: contain;
+    border: none;
+    border-radius: 50%;
+    display: block;
+
+    @include mq('desktop') {
+        left: 213px;
+        top: 166px;
+        width: 26px;
+        height: 26px;
+    }
 }
 
 // TITLE
 .header__title {
     position: relative;
-
     margin-top: 136px;
-
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
-
+    color: $primary-white-color;
     z-index: 3;
 
     @include mq('tablet') {
@@ -195,16 +349,27 @@
         font-size: 22px;
         line-height: 25px;
     }
+
+    @include mq('desktop') {
+        margin-top: 60px;
+        font-size: 38px;
+        line-height: 44px;
+    }
 }
 
 .header__title--second {
     font-size: 48px;
     line-height: 96.5%;
     text-transform: uppercase;
-    color: #D41443;
+    color: $primary-red-color;
 
     @include mq('tablet') {
         font-size: 34px;
+        line-height: 90.5%;
+    }
+
+    @include mq('desktop') {
+        font-size: 58px;
         line-height: 90.5%;
     }
 }
