@@ -1,18 +1,30 @@
 .about {
   background-color: $primary-bgc;
+  padding-bottom: 40px;
+
+  @include mq('tablet') {
+    padding-bottom: 60px;
+  }
+
+  &__photo {
+    @include mq('mobile-only') {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
+
 .about__container {
   @include mq('tablet') {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 187px;
   }
   @include mq('desktop') {
     background-image: url(../images/about/about-bgc-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 89px;
+    padding-bottom: 20px;
 
     @include mq('retina') {
       background-image: url(../images/about/about-bgc-desktop@2.png);
@@ -73,7 +85,7 @@
 
   @include mq('desktop') {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     line-height: 1.78;
   }
 }
@@ -89,20 +101,4 @@
     margin-bottom: 40px;
     font-size: 14px;
   }
-}
-
-.button {
-  height: 44px;
-  //   width: 176px;
-  border-radius: 22px;
-  background-color: #ffffff;
-  padding-left: 37px;
-  padding-right: 56px;
-  border: transparent;
-}
-
-.button-text {
-  color: $primary-red-color;
-  font-size: 14px;
-  font-weight: 700;
 }
