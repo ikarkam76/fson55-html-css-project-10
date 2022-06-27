@@ -6,13 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 187px;
   }
   @include mq('desktop') {
     background-image: url(../images/about/about-bgc-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 89px;
 
     @include mq('retina') {
       background-image: url(../images/about/about-bgc-desktop@2.png);

@@ -1,3 +1,11 @@
+.gallery {
+    background-image: linear-gradient(to bottom, $primary-bgc 20%, $primary-white-color 20%);
+
+    @include mq('tablet-only') {
+        background-image: linear-gradient(to bottom, $primary-bgc 57%, $primary-white-color 57%);
+    }
+}
+
 .gallery__item {
     width: calc(100% / 6);
 }
@@ -10,15 +18,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -27px; 
-    padding-bottom: 302px;
 
-    @include mq('tablet') {
-        margin-top: -187px;
-    }
 
     @include mq('desctop') {
-        margin-top: -89px;
         padding-right: 93px;
         padding-left: 93px;
     }
