@@ -1,0 +1,55 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  min-width: 176px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.button--white {
+  background-color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: $btn-pale-accent;
+  }
+}
+
+.button--red {
+  background-color: $primary-red-color;
+  &:hover,
+  &:focus {
+    background-color: $btn-red-accent;
+  }
+}
+
+.button__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28;
+
+  @include mq('tablet') {
+    font-size: 16px;
+  }
+
+  &--red {
+    color: $primary-red-color;
+  }
+
+  &--white {
+    color: $primary-white-color;
+  }
+}
+
+.button__icon {
+  margin-left: 14px;
+
+  &--red {
+    stroke: $primary-red-color;
+  }
+  &--white {
+    stroke: $primary-white-color;
+  }
+}
