@@ -1,0 +1,192 @@
+.section--otherPaddings {
+    padding-top: 0;
+    
+    @include mq('tablet-only') {
+        padding-bottom: 0;
+    }
+    background-color: $primary-bgc;
+}
+
+.container--otherPaddings {
+    padding-right: 70px;
+    @include mq('tablet-only') {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.advantages-list {
+    @include mq('tablet') {
+        display: flex;
+
+        &__item:nth-child(1) {
+            flex-basis: 180px;
+            margin-right: 4px;
+        }
+
+        &__item:nth-child(2) {
+            flex-basis: 162px;
+            margin-right: 22px;
+        }
+        &__item:nth-child(3) {
+            flex-basis: 159px;
+        }
+    }
+
+    @include mq('desktop') {
+        &__item:nth-child(1) {
+            flex-basis: 288px;
+            margin-right: 112px;
+        }
+
+        &__item:nth-child(2) {
+            flex-basis: 317px;
+            margin-right: 80px;
+        }
+        &__item:nth-child(3) {
+            flex-basis: 288px;
+        }
+    }
+}
+
+.advantages-list__item {
+    &::before {
+        content: '';
+
+        display: block;
+        margin: 0 0 16px 0;
+        
+        background-size: contain;
+    }
+    &:nth-child(1):before {
+        width: 33px;
+        height: 50px;
+        background-image: url(../images/advantages/advantages-img1_sm.png);
+        
+        @include mq('retina') {
+            background-image: url(../images/advantages/advantages-img1_sm@2x.png);
+        }
+    }
+    &:nth-child(2):before {
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/advantages/advantages-img2_sm.png);
+        
+        @include mq('retina') {
+            background-image: url(../images/advantages/advantages-img2_sm@2x.png);
+        }
+    }
+    &:nth-child(3):before {
+        width: 44px;
+        height: 50px;
+        background-image: url(../images/advantages/advantages-img3_sm.png);
+        
+        @include mq('retina') {
+            background-image: url(../images/advantages/advantages-img3_sm@2x.png);
+        }
+    }
+
+    @include mq('tablet') {    
+        &::before {
+            margin: 0 0 36px 0;
+        }
+        &:nth-child(1):before {
+            background-image: url(../images/advantages/advantages-img1_md.png);
+        
+            @include mq('retina') {
+                background-image: url(../images/advantages/advantages-img1_md@2x.png);
+            }
+        }
+        &:nth-child(2):before {
+            background-image: url(../images/advantages/advantages-img2_md.png);
+        
+            @include mq('retina') {
+                background-image: url(../images/advantages/advantages-img2_md@2x.png);
+            }
+        }
+        &:nth-child(3):before {
+            background-image: url(../images/advantages/advantages-img3_md.png);
+        
+            @include mq('retina') {
+                background-image: url(../images/advantages/advantages-img3_md@2x.png);
+            }
+        }
+    }
+    @include mq('desktop') {    
+        &::before {
+            margin: 0 0 40px 0;
+        }
+        &:nth-child(1):before {
+            background-image: url(../images/advantages/advantages-img1_lg.png);
+        
+            @include mq('retina') {
+                background-image: url(../images/advantages/advantages-img1_lg@2x.png);
+            }
+        }
+        &:nth-child(2):before {
+            background-image: url(../images/advantages/advantages-img2_lg.png);
+        
+            @include mq('retina') {
+                background-image: url(../images/advantages/advantages-img2_lg@2x.png);
+            }
+        }
+        &:nth-child(3):before {
+            background-image: url(../images/advantages/advantages-img3_lg.png);
+        
+            @include mq('retina') {
+                background-image: url(../images/advantages/advantages-img3_lg@2x.png);
+            }
+        }
+    }
+}
+
+.advantages-list__title {
+    margin-bottom: 19px;
+
+    font-family: $secondary-font;
+    font-weight: $secondary-fw;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+
+    color: $primary-red-color;
+
+    @include mq('tablet') {
+        margin-bottom: 13px;
+
+        font-size: 48px;
+        line-height: 1.15;
+
+        text-transform: none;
+    }
+    @include mq('desktop') {
+        margin-bottom: 16px;
+
+        font-size: 58px;
+        line-height: 1.14;
+    }
+}
+
+.advantages-list__text {
+    margin-bottom: 32px;
+
+    font-weight: 700;
+    line-height: 1.67;
+
+    color: #000000;
+
+    @include mq('tablet') {
+        margin-bottom: 0;
+
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    @include mq('desktop') {
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+    }
+}

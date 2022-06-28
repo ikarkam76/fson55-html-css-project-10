@@ -1,23 +1,52 @@
-<header class="header">
+<header class="header" id="header">
     <div class="container">
 
-        <div class="header__logo">
-            <a class="logo__link" href="#">
-                <svg class="logo__icon" width="199" height="50">
-                    <use href="./images/hero-header/icons.svg#icon-logo"></use>
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a class="logo__link" href="./index.html">
+                    <svg class="logo__icon" width="199" height="50">
+                        <use href="./images/hero-header/icons.svg#icon-logo"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">How it’s made?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Our products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__btn-buy btn">
+                Buy now
+                <svg class="icon-arrow" width="8" height="9">
+                    <use href="./images/hero-header/icons.svg#icon-arrow"></use>
                 </svg>
-            </a>
+            </button>
         </div>
 
-        <button class="menu__btn-open btn">
-            <svg class="logo__icon" width="20" height="12">
+        <button class="menu__btn--open btn">
+            <svg class="menu__icon" width="20" height="12">
                 <use href="./images/hero-header/icons.svg#icon-btn-open"></use>
             </svg>
         </button>
 
         <div class="header__menu">
-            <button class="menu__btn-close btn">
-                <svg class="logo__icon" width="14" height="14">
+            <button class="menu__btn--close btn">
+                <svg class="menu__icon" width="14" height="14">
                     <use href="./images/hero-header/icons.svg#icon-btn-close"></use>
                 </svg>
             </button>
@@ -31,76 +60,31 @@
 
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="" class="menu__link">
+                    <a href="#header" class="menu__link">
                         Home
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">
+                    <a href="#about" class="menu__link">
                         About us
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">
+                    <a href="#about" class="menu__link">
                         How it’s made?
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">
+                    <a href="#products" class="menu__link">
                         Our products
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">
+                    <a href="#contacts" class="menu__link">
                         Contact
                     </a>
                 </li>
             </ul>
-
-        </div>
-
-        <button class="header__btn-buy btn">
-            Buy now
-            <svg class="logo__icon" width="5" height="8">
-                <use href="./images/hero-header/icons.svg#icon-arrow"></use>
-            </svg>
-        </button>
-
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">About us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">How it’s made?</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">Our products</a>
-                </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="icecream-wrapper">
-            <div class="icecream-background">
-                <picture class="icecream">
-                    <source srcset="
-                    ./images/hero-header/icecream-desktop-1x.png 1x, 
-                    ./images/hero-header/icecream-desktop-2x.png 2x" media="(min-width:1200px)" />
-                    <source srcset="
-                    ./images/hero-header/icecream-tablet-1x.png 1x,
-                    ./images/hero-header/icecream-tablet-2x.png 2x" media="(min-width:768px)" />
-                    <source srcset="
-                    ./images/hero-header/icecream-mobile-1x.png 1x,
-                    ./images/hero-header/icecream-mobile-2x.png 2x" />
-                    <img src="./images/hero-header/icecream-mobile-1x.png" alt="Морозиво" />
-                </picture>
-            </div>
         </div>
 
         <h1 class="header__title">
@@ -109,9 +93,69 @@
             <span class="header__title--second">passion</span>
         </h1>
 
-        <a href="#" class="header__btn-products btn">Products</a>
+        <a href="#products" class="header__btn-products btn">Products</a>
 
-        <a href="#" class="header__btn-howmade btn">How it’s made?</a>
+        <a href="#about" class="header__btn-howmade btn">How it’s made?</a>
+
+        <div class="milk__wrapper">
+            <picture class="milk__igm">
+                <source srcset="
+                                ./images/hero-header/milk-desktop-1x.png 1x, 
+                                ./images/hero-header/milk-desktop-2x.png 2x" media="(min-width:1200px)" />
+
+                <source srcset="
+                                ./images/hero-header/milk-tablet-1x.png 1x,
+                                ./images/hero-header/milk-tablet-2x.png 2x" />
+                <img src="./images/hero-header/milk-tablet-1x.png" alt="Молоко" />
+            </picture>
+            <p class="milk__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="milk__btn btn">
+
+
+            </button>
+        </div>
+
+        <div class="icecream__wrapper">
+            <div class="icecream__background animate__animated animate__fadeIn">
+                <picture class="icecream__img">
+
+
+                    <source srcset="
+                        ./images/hero-header/icecream-desktop-1x.png 1x, 
+                        ./images/hero-header/icecream-desktop-2x.png 2x" media="(min-width:1200px)" />
+                    <source srcset="
+                        ./images/hero-header/icecream-tablet-1x.png 1x,
+                        ./images/hero-header/icecream-tablet-2x.png 2x" media="(min-width:768px)" />
+                    <source srcset="
+                        ./images/hero-header/icecream-mobile-1x.png 1x,
+                        ./images/hero-header/icecream-mobile-2x.png 2x" />
+                    <img src="./images/hero-header/icecream-mobile-1x.png" alt="Морозиво" />
+                </picture>
+            </div>
+        </div>
+
+        <div class="girl__wrapper">
+            <picture class="girl__img">
+                <source srcset="
+                    ./images/hero-header/girl-desktop-1x.png 1x, 
+                    ./images/hero-header/girl-desktop-2x.png 2x" media="(min-width:1200px)" />
+
+                <source srcset="
+                    ./images/hero-header/girl-tablet-1x.png 1x,
+                    ./images/hero-header/girl-tablet-2x.png 2x" />
+                <img src="./images/hero-header/girl-tablet-1x.png" alt="Дівчина" />
+            </picture>
+        </div>
+
+        <div class="numbers__wrapper">
+            <svg class="numbers__icon-16">
+                <use href="./images/hero-header/icons.svg#icon-number-16"></use>
+            </svg><svg class="numbers__icon-43">
+                <use href="./images/hero-header/icons.svg#icon-number-23"></use>
+            </svg>
+        </div>
 
     </div>
 

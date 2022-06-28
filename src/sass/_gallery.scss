@@ -1,4 +1,7 @@
 .gallery {
+    @include mq('mobile-only') {
+        padding-top: 0;
+    }
     background-image: linear-gradient(to bottom, $primary-bgc 20%, $primary-white-color 20%);
 
     @include mq('tablet-only') {
@@ -29,6 +32,14 @@
 .gallery__foto {
     display: block;
     width: 100%;
+
+    transition-timing-function: $timing-function;
+    transition-duration: 250ms;
+    
+    &:hover, 
+    &:focus {
+        transform: scale(1.2);
+    }
 }
 
 .foto5 {

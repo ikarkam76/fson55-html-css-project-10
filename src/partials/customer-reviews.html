@@ -1,49 +1,71 @@
-<section>
-    <div class="container">
-        <h2 class="visually-hidden">Customer Review</h2>
-        <div class="slider">
-            <div class="slider__box">
-                <img 
-                src="./images/customers/testimonials1 1.png"
-                alt="Photo of the first customer" 
-                />
-                <p class="slider__text-review">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-                <p class="slider__text-info">Emily, Los Angeles</p>
-            </div>
+<section class="section section--padding-bottom">
+  <div class="container">
+    <h2 class="visually-hidden">Customer Review</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="slider swiper-slide">
+          <img
+            class="slider__photo"
+            srcset="
+              ./images/customers/testimonials1.png    1x,
+              ./images/customers/testimonials1@2x.png 2x
+            "
+            src="./images/customers/testimonials1.png"
+            alt="Photo of the first customer"
+          />
+          <div class="slider__review">
+            <p class="slider__review--plus-text">
+              <span class="slider__review--underlined-text"
+                >Nullam viverra consectetuer. Quisque cursus et, porttitor
+                risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                congue. Lorem ipsum primis in nibh vel risus.</span
+              >
+            </p>
+          </div>
+          <p class="slider__text-info">Kate, Chicago</p>
         </div>
-        <div class="container">
-            <h2 class="visually-hidden">Customer Review</h2>
-            <div class="slider">
-                <div class="slider__box">
-                    <img 
-                    src="./images/customers/testimonials1 3.png"
-                    alt="Photo of the second customer" 
-                    />
-                    <p class="slider__text-review">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-                    <p class="slider__text-info">Emily, Los Angeles</p>
-                </div>
-            </div>
+        <div class="slider swiper-slide">
+          <img
+            class="slider__photo"
+            srcset="
+              ./images/customers/testimonials2.png    1x,
+              ./images/customers/testimonials2@2x.png 2x
+            "
+            src="./images/customers/testimonials2.png"
+            alt="Photo of the first customer"
+          />
+          <div class="slider__review">
+            <p class="slider__review--plus-text">
+              <span class="slider__review--underlined-text"
+                >Nullam viverra consectetuer. Quisque cursus et, porttitor
+                risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                congue. Lorem ipsum primis in nibh vel risus.</span
+              >.
+            </p>
+          </div>
+          <p class="slider__text-info">Emily, Los Angeles</p>
         </div>
-        <div class="container">
-            <h2 class="visually-hidden">Customer Review</h2>
-            <div class="slider">
-                <div class="slider__box">
-                    <img 
-                    src="./images/customers/testimonials1 4.png"
-                    alt="Photo of the third customer" 
-                    />
-                    <p class="slider__text-review">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-                    <p class="slider__text-info">Emily, Los Angeles</p>
-                </div>
-            </div>
+        <div class="slider swiper-slide">
+          <img
+            class="slider__photo"
+            ssrcset="./images/customers/testimonials3.png 1x,
+                        ./images/customers/testimonials3@2x.png 2x"
+            src="./images/customers/testimonials3.png"
+            alt="Photo of the first customer"
+          />
+          <div class="slider__review">
+            <p class="slider__review--plus-text">
+              <span class="slider__review--underlined-text"
+                >Nullam viverra consectetuer. Quisque cursus et, porttitor
+                risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                congue. Lorem ipsum primis in nibh vel risus.</span
+              >
+            </p>
+          </div>
+          <p class="slider__text-info">Meri, Texas</p>
         </div>
-        <!-- Next and previous button -->
-        
-        <!-- The dots circle -->
-        <div>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
 </section>
