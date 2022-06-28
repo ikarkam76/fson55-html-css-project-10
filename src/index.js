@@ -1,1 +1,2 @@
-import "./products.js";
+import './products.js';
+import './menu.js';
