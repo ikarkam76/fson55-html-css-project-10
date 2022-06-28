@@ -45,7 +45,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 220px;
 
   @include mq('retina') {
     background-image: url(../images/about/about-bgc-mobile@2.png);
