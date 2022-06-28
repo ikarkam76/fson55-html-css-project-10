@@ -1,4 +1,7 @@
 .gallery {
+    @include mq('mobile-only') {
+        padding-top: 0;
+    }
     background-image: linear-gradient(to bottom, $primary-bgc 20%, $primary-white-color 20%);
 
     @include mq('tablet-only') {

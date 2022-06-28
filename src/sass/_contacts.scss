@@ -1,5 +1,9 @@
 .section__color{
     background-color: #FFF5F6;
+    padding-bottom: 0;
+    @include mq('desktop') {
+        padding-bottom: 60px;
+    }
     // margin-bottom: 40px;
     // @include mq('desktop'){
     //     align-items: center;
@@ -7,17 +11,22 @@
     // }
 }
 .contacts{
-    margin-top: -302px; 
+    margin-top: -375px; 
     margin-right: 0;
     // display: flex;
     // flex-wrap: wrap;
     // align-items: center;
     // width: 280px;
     @include mq('tablet'){
-        margin-top: -298px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+    }
+    @include mq('tablet-only') {
+        margin-top: -350px;
+    }
+    @include mq('desktop') {
+        margin-top: -160px;
     }
 }
 .contacts__box{
