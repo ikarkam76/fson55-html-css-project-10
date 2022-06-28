@@ -1,4 +1,5 @@
 .section__color{
+    
     background-color: #FFF5F6;
     padding-bottom: 0;
     @include mq('desktop') {
@@ -11,16 +12,26 @@
     // }
 }
 .contacts{
-    margin-top: -375px; 
-    margin-right: 0;
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: center;
-    // width: 280px;
+
+    margin-top: -302px;
+    
+    @include mq('mobile-only'){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // width: 320px;
+    
+
+
     @include mq('tablet'){
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        flex-direction: row;
+    }
+    @include mq('desktop'){
+        margin-top: -99px;
     }
     @include mq('tablet-only') {
         margin-top: -350px;
@@ -38,6 +49,12 @@
 
 .contacts__item{
     width: 280px;
+    @include mq('mobile'){
+        align-items: center;
+        justify-content: center;
+    }
+    
+    // max-width: 480px;
     display: inline-block;
     background-color: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -49,6 +66,7 @@
     
    
     @include mq('tablet'){
+        
         margin-bottom: 0;
         margin-right: 32px;
         width: 224px;
@@ -156,6 +174,7 @@ border-bottom:  1px solid #E1E1E1;
     }
 }
 .date{   
+    margin-top: 0;
 font-style: normal;
 line-height: 1.86;
     @include mq('tablet'){
