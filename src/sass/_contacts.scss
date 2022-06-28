@@ -1,4 +1,5 @@
 .section__color{
+    
     background-color: #FFF5F6;
     // margin-bottom: 40px;
     // @include mq('desktop'){
@@ -8,17 +9,24 @@
 }
 .contacts{
     margin-top: -302px;
-    margin-right: 0;
     
-    width: 320px;
-    display: flex;
-    flex-wrap: wrap;
+    @include mq('mobile-only'){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // width: 320px;
+    
 
     @include mq('tablet'){
         margin-top: -298px;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        flex-direction: row;
+    }
+    @include mq('desktop'){
+        margin-top: -99px;
     }
 }
 .contacts__box{
@@ -29,9 +37,12 @@
 }
 
 .contacts__item{
-    width: 320px;
-    // align-items: center;
-    // justify-content: center;
+    width: 280px;
+    @include mq('mobile'){
+        align-items: center;
+        justify-content: center;
+    }
+    
     // max-width: 480px;
     display: inline-block;
     background-color: #FFFFFF;
@@ -44,6 +55,7 @@
     
    
     @include mq('tablet'){
+        
         margin-bottom: 0;
         margin-right: 32px;
         width: 224px;
