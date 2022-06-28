@@ -258,5 +258,18 @@ color:$text-pink-color;
 }
 .location{
     margin-top: 32px;
-    margin-bottom: 10px;
+        margin-bottom: 10px;
+    
+    
+        
+    @include mq('tablet'){
+        margin-top: 0;
+        margin-right: 14.5px;
+        margin-bottom: 0;
+    }
+    @include mq ('desktop'){
+        margin-top: 0;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
