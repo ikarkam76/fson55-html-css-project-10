@@ -30,7 +30,7 @@
                 </ul>
             </nav>
 
-            <button class="header__btn-buy btn">
+            <button class="header__btn-buy btn" data-modal-open1>
                 Buy now
                 <svg class="icon-arrow" width="8" height="9">
                     <use href="./images/hero-header/icons.svg#icon-arrow"></use>
@@ -51,7 +51,7 @@
                 </svg>
             </button>
 
-            <button class="menu__btn-buy btn">
+            <button class="menu__btn-buy btn" data-modal-open>
                 Buy now
                 <svg class="logo__icon" width="5" height="8">
                     <use href="./images/hero-header/icons.svg#icon-arrow"></use>
@@ -93,9 +93,14 @@
             <span class="header__title--second">passion</span>
         </h1>
 
-        <a href="#products" class="header__btn-products btn">Products</a>
-
-        <a href="#about" class="header__btn-howmade btn">How it’s made?</a>
+        <ul class="header-btns__list">
+            <li class="header-btns__item">
+                <a href="#products" class="header-btn__link btn-products btn">Products</a>
+            </li>
+            <li class="header-btns__item">
+                <a href="#about" class="header-btn__link btn-howmade btn">How it’s made?</a>
+            </li>
+        </ul>
 
         <div class="milk__wrapper">
             <picture class="milk__igm">
@@ -157,6 +162,61 @@
             </svg>
         </div>
 
+    </div>
+
+    <div class="backdrop is-hidden" data-modal data-modal1>
+        <div class="modal">
+            <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form name="modal-form" class="modal__form form">
+                <label class="form__label">Имя
+                    <span class="form__wrapper">
+                        <input type="text" name="name" class="form__input" placeholder=" " />
+                        <svg class="form__icon" width="18" height="18">
+                            <use href="./images/hero-header/icons.svg#icon-form-person"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="form__label">Телефон
+                    <span class="form__wrapper">
+                        <input type="tel" name="telephone" class="form__input" placeholder=" " />
+                        <svg class="form__icon" width="18" height="18">
+                            <use href="./images/hero-header/icons.svg#icon-form-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="form__label">Почта
+                    <span class="form__wrapper">
+                        <input type="email" name="email" class="form__input" placeholder=" " />
+                        <svg class="form__icon" width="18" height="18">
+                            <use href="./images/hero-header/icons.svg#icon-form-email"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <label class="form__textarea-label">Комментарий
+                    <textarea name="comment" class="form__textarea" placeholder="Введите текст"></textarea>
+                </label>
+
+                <label class="form__checkbox-label">
+                    <input type="checkbox" name="checkbox" class="form__checkbox visually-hidden" />
+                    <svg class="form__checkbox-icon" width="16" height="15">
+                        <use href="./images/hero-header/icons.svg#icon-form-check"></use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="form__contract-link">Условия договора</a>
+                </label>
+
+                <button type="submit" class="form__btn">Отправить</button>
+            </form>
+
+            <button type="button" class="modal__btn--close" data-modal-close data-modal-close1>
+                <svg class="modal__icon--vector" width="11" height="11">
+                    <use href="./images/hero-header/icons.svg#icon-vector"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 
     </div>

@@ -2,6 +2,10 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 500;
+
+  &.is-open {
+    overflow: hidden;
+  }
 }
 
 h1,
