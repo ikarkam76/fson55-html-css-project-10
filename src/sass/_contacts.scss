@@ -13,32 +13,35 @@
 }
 .contacts{
 
-    margin-top: -302px;
-    
-    @include mq('mobile-only'){
-        display: flex;
-        flex-direction: column;
+    margin-top: -375px;
+    display: flex;
+        
         align-items: center;
+    @include mq('mobile-only'){
+        flex-direction: column;
     }
     // width: 320px;
     
 
 
     @include mq('tablet'){
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        flex-direction: row;
+    //    margin-top: -358px;
+       flex-wrap: nowrap;
+    //    align-items: center;
+       flex-direction: row;
     }
-    @include mq('desktop'){
-        margin-top: -99px;
-    }
-    @include mq('tablet-only') {
+    @include mq('tablet-only'){
         margin-top: -350px;
     }
-    @include mq('desktop') {
+    @include mq('desktop'){
         margin-top: -160px;
     }
+    // @include mq('tablet-only') {
+    //     margin-top: -350px;
+    // }
+    // @include mq('desktop') {
+    //     margin-top: -160px;
+    // }
 }
 .contacts__box{
     padding: 40px 32px;
@@ -48,10 +51,13 @@
 }
 
 .contacts__item{
+    height: 412px;
     width: 280px;
     @include mq('mobile'){
         align-items: center;
         justify-content: center;
+        
+        
     }
     
     // max-width: 480px;
@@ -66,13 +72,13 @@
     
    
     @include mq('tablet'){
-        
+        height: 528px;
         margin-bottom: 0;
         margin-right: 32px;
         width: 224px;
     }
     @include mq('desktop'){
-        
+        height: 538px;
         width: 368px;
         margin-right: 32px;
     }
@@ -251,44 +257,6 @@ color:$text-pink-color;
   
 }
 .location{
-    width: 161px;
-    height: 44px;
     margin-top: 32px;
     margin-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-    background-color: #D41342;
-   
-    @include mq('tablet'){
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: 14px;
-    }
-}
-.location a{
-    color: $primary-white-color;
-}
-.franchise{
-    background-color: #FFFFFF;
-    
-    &:hover,
-    &:focus{
-        background-color: $btn-pale-accent;
-    }
-
-}
-.franchise a{
-    color: $primary-red-color;
-}
-.location .arrow{
-    margin-left: 13.6px;
-    width: 4.43px;
-    height: 8px;
-    
-}
-.franchise .arrow{
-    margin-left: 12.7px;
-    width: 4.43px;
-    height: 8px;
-    
 }
