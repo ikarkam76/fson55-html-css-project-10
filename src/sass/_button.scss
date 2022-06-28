@@ -1,7 +1,5 @@
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   height: 44px;
   min-width: 176px;
   border-radius: 22px;
@@ -44,7 +42,7 @@
 }
 
 .button__icon {
-  margin-left: 14px;
+  margin-left: 11px;
 
   &--red {
     stroke: $primary-red-color;

@@ -43,8 +43,9 @@
 .text-wrapper {
   background-image: url(../images/about/about-bgc-mobile.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  max-width: 220px;
 
   @include mq('retina') {
     background-image: url(../images/about/about-bgc-mobile@2.png);
@@ -52,6 +53,11 @@
 
   @include mq('tablet') {
     background-image: none;
+    max-width: 334px;
+  }
+
+  @include mq('desktop') {
+    max-width: 463px;
   }
 }
 .section__label--margin {
@@ -73,13 +79,11 @@
 }
 
 .about__description {
-  min-width: 220px;
   line-height: 1.58;
   margin-bottom: 35px;
 
   @include mq('tablet') {
     font-size: 14px;
-    margin-bottom: 40px;
     line-height: 1.78;
   }
 
@@ -91,7 +95,6 @@
 }
 
 .about__subdescription {
-  min-width: 220px;
   color: $text-light-color;
   line-height: 1.58;
   margin-bottom: 20px;
