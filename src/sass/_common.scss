@@ -1,5 +1,31 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
+.akeconsa-udaneles {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9;
+}
+
+.akeconsa-udaneles a {
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    background: $text-light-color;
+    display: block;
+    border-radius: 15px;
+}
+
+.akeconsa-udaneles a span {
+    color: $text-pink-color;
+    font-size: 30px;
+    line-height: 42px;
+    cursor: pointer;
+}
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
