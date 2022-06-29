@@ -6,6 +6,8 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  transition: color $fast-anim $timing-function,
+    background-color $fast-anim $timing-function;
 }
 
 .button--white {
