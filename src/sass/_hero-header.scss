@@ -98,7 +98,7 @@
     top: 0;
     transform: translateX(100%);
     transition: transform $timing-function $fast-anim;
-    width: 75%;
+    width: 250px;
     height: 100%;
     padding: 60px 20px;
     text-align: left;
@@ -108,10 +108,6 @@
 
     &.is-open {
         transform: translateX(0);
-    }
-
-    @include mq('tablet') {
-        width: 50%;
     }
 
     @include mq('desktop') {
@@ -347,23 +343,62 @@
     }
 }
 
-.numbers__icon-16 {
-    width: 43px;
-    height: 44px;
+.numbers__item {
+    text-align: right;
+    position: relative;
 
-    @include mq('desktop') {
-        width: 72px;
-        height: 77px;
+    &+& {
+        margin-top: 16px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -10px;
+        top: -2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        z-index: 3;
+
+        @include mq('desktop') {
+            width: 30px;
+            height: 30px;
+            top: -3px;
+            right: -18px;
+        }
     }
 }
 
-.numbers__icon-43 {
-    width: 51px;
-    height: 43px;
+.numbers__text--red {
+    position: relative;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    z-index: 4;
 
     @include mq('desktop') {
-        width: 92px;
-        height: 76px;
+        font-size: 46px;
+        line-height: 53px;
+    }
+}
+
+.numbers__text--white {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: #FFFFFF;
+
+    @include mq('desktop') {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
