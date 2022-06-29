@@ -18,15 +18,14 @@
 .advantages-list {
     @include mq('tablet') {
         display: flex;
+        justify-content: space-between;
 
         &__item:nth-child(1) {
             flex-basis: 180px;
-            margin-right: 4px;
         }
 
         &__item:nth-child(2) {
             flex-basis: 162px;
-            margin-right: 22px;
         }
         &__item:nth-child(3) {
             flex-basis: 159px;
@@ -36,12 +35,10 @@
     @include mq('desktop') {
         &__item:nth-child(1) {
             flex-basis: 288px;
-            margin-right: 112px;
         }
 
         &__item:nth-child(2) {
             flex-basis: 317px;
-            margin-right: 80px;
         }
         &__item:nth-child(3) {
             flex-basis: 288px;
@@ -50,6 +47,12 @@
 }
 
 .advantages-list__item {
+    @include mq('mobile-only') {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
     &::before {
         content: '';
 
@@ -170,8 +173,6 @@
 }
 
 .advantages-list__text {
-    margin-bottom: 32px;
-
     font-weight: 700;
     line-height: 1.67;
 
