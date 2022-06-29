@@ -1,20 +1,15 @@
 .section--padding-bottom {
   padding-top: 0;
-  padding-bottom: 362px;
 
-  @include mq('tablet-only') {
-    padding-bottom: 378px;
-  }
 
-@include mq('desktop') {
+ @include mq('desktop') {
   padding-top: 60px;
-  padding-bottom: 219px;
-}
+ }
 }
 
 .slider {
-text-align: center;
-margin-bottom: 16px;
+ text-align: center;
+ margin-bottom: 16px;
  @media screen and (min-width:768px) {
     margin-bottom: 32px;
   } 
@@ -202,6 +197,4 @@ border-radius: 0;
 }
 }
 
-// .slider.swiper-slide.swiper-slide-active {
-//   margin-right: 0;
-// }
+
