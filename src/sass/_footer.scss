@@ -87,18 +87,10 @@
     justify-content: space-between;
   }
 }
-.menu {
+.social-network {
   margin-top: 40px;
   @include mq('tablet') {
-  }
-
-  @include mq('desktop') {
-    margin-top: 0px;
-  }
-}
-.social-network {
-  @include mq('tablet') {
-    margin-top: 30px;
+    margin-top: 60px;
   }
   @include mq('desktop') {
     margin-top: 0px;
@@ -108,8 +100,7 @@
   display: flex;
   justify-content: end;
 }
-.social-network__icon {
-}
+
 .social-network__button {
   width: 34px;
   height: 34px;
@@ -123,15 +114,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: transform;
+  transition-property: background-color, fill, transform;
   transition-duration: 100ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background: #d41443;
+    background-color: #d41443;
     fill: #fff;
   }
   &:focus {
-    background: #d41443;
+    background-color: #d41443;
     fill: #fff;
   }
 }
@@ -146,8 +137,7 @@
   background-size: contain;
   height: 100%;
 }
-.footer-menu-adress__item {
-}
+
 .footer-menu-adress {
   display: flex;
   margin-top: 40px;
