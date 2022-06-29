@@ -1,9 +1,9 @@
 <section class="section section__color">
-  <h2 class="visually-hidden">Contacts</h2>
   <div class="container" id="contacts">
+    <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts">
       <li class="contacts__item">
-        <div class="contacts__box">
+        <div class="contacts__item">
           <p class="contacts__title contacts__title--brown">CAFE</p>
           <ul class="contacts__thumb">
             <li class="thumb__about">
@@ -28,7 +28,7 @@
         </div>
       </li>
       <li class="contacts__item">
-        <div class="contacts__box">
+        <div class="contacts__item">
           <p class="contacts__title contacts__title--green">FOODTRUCK</p>
           <ul class="contacts__thumb">
             <li class="thumb__about">
@@ -53,7 +53,7 @@
         </div>
       </li>
       <li class="contacts__item">
-        <div class="contacts__box">
+        <div class="contacts__item">
           <p class="contacts__title contacts__title--brown">CAFE</p>
           <ul class="contacts__thumb">
             <li class="thumb__about">
@@ -68,18 +68,22 @@
               <p class="date">Saturday - Sunday</p>
               <p class="time">08:00 AM - 16:00 PM</p>
             </li>
-            <li class="thumb__contacts">
-              <a class="tel" href="tel:+61083766284">+61(0) 383 766 284</a>
-              <a class="mail" href="mailto:noreply@envato.com"
-                >noreply@envato.com</a
-              >
-            </li>
+            <ul class="thumb__contacts">
+              <li>
+                <a class="tel" href="tel:+61083766284">+61(0) 383 766 284</a>
+              </li>
+              <li>
+                <a class="mail" href="mailto:noreply@envato.com"
+                  >noreply@envato.com
+                </a>
+              </li>
+            </ul>
           </ul>
         </div>
       </li>
     </ul>
     <ul class="contacts__buttons">
-      <li>
+      <li class="contacts__button--location">
         <button class="button button--red location" type="button">
           <span class="button__text button__text--white">Our locations</span>
           <svg class="button__icon button__icon--white" width="8" height="9">
@@ -87,7 +91,7 @@
           </svg>
         </button>
       </li>
-      <li>
+      <li class="contacts__button--franchise">
         <button class="button button--white" type="button">
           <span class="button__text button__text--red">Franchise</span>
           <svg class="button__icon button__icon--red" width="8" height="9">

@@ -1,9 +1,14 @@
 .section__color{
     
-    background-color: #FFF5F6;
+    background: linear-gradient(to top, #FFF5F6 75%, #FFFFFF 25%);
+    @include mq ('tablet'){
+        background: linear-gradient(to top, #FFF5F6 40%, #FFFFFF 60%);
+    }
     padding-bottom: 0;
     @include mq('desktop') {
         padding-bottom: 60px;
+        background: linear-gradient(to top, #FFF5F6 70%, #FFFFFF 30%);
+
     }
     // margin-bottom: 40px;
     // @include mq('desktop'){
@@ -12,8 +17,9 @@
     // }
 }
 .contacts{
-
-    margin-top: -375px;
+    
+       
+   
     display: flex;
         
         align-items: center;
@@ -31,27 +37,23 @@
        flex-direction: row;
     }
     @include mq('tablet-only'){
-        margin-top: -350px;
+        // margin-top: -350px;
     }
     @include mq('desktop'){
-        margin-top: -160px;
+        // margin-top: -160px;
     }
-    // @include mq('tablet-only') {
-    //     margin-top: -350px;
-    // }
-    // @include mq('desktop') {
-    //     margin-top: -160px;
-    // }
+    
 }
-.contacts__box{
+
+ div.contacts__item{
     padding: 40px 32px;
     @include mq ('desktop'){
         padding: 40px;
     }
-}
-
+ }
 .contacts__item{
-    height: 412px;
+    margin-left: auto;
+    margin-right: auto;
     width: 280px;
     @include mq('mobile'){
         align-items: center;
@@ -61,7 +63,7 @@
     }
     
     // max-width: 480px;
-    display: inline-block;
+    // display: inline-block;
     background-color: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -72,13 +74,13 @@
     
    
     @include mq('tablet'){
-        height: 528px;
+        
         margin-bottom: 0;
         margin-right: 32px;
         width: 224px;
     }
     @include mq('desktop'){
-        height: 538px;
+        
         width: 368px;
         margin-right: 32px;
     }
@@ -94,22 +96,20 @@
 }
 .contacts__title{
 font-style: normal;
-line-height: 186%;
+line-height: 1.86;
 text-align: center;
-margin-bottom: 20px;
-
 align-items: center;
 border-radius: 4px;
 letter-spacing: 0.04em;
 color: #FFFFFF;
 
     @include mq ('tablet'){
-        margin-bottom: 32px;
+       
         font-size: 16px;
         line-height: 1.86;
     }
     @include mq('desktop'){
-        margin-bottom: 32px;
+        
         font-size: 16px;
         line-height: 1.86;
     }
@@ -139,6 +139,20 @@ color: #FFFFFF;
 //         line-height: 1.86;
 // }
 // }
+.thumb__about{
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+  @include mq ('tablet'){
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  @include mq ('desktop'){
+   padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+}
 .thumb__title{
 font-style: normal;
 line-height: 1.86;
@@ -155,15 +169,14 @@ margin-bottom: 8px;
 font-style: normal;
 line-height: 1.5;
 color: #907E82;
-padding-bottom: 24px;
-border-bottom:  1px solid #E1E1E1;
+
     @include mq('tablet'){
         font-size: 14px;
-        padding-bottom: 32px;
+        
         line-height: 1.66;
     }
     @include mq('desktop'){
-        padding-bottom: 32px;
+        
         font-size: 16px;
         line-height: 1.83;
     }
@@ -172,6 +185,7 @@ border-bottom:  1px solid #E1E1E1;
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom:  1px solid #E1E1E1;
+    border-top:  1px solid #E1E1E1;
     margin-bottom: 24px;
     @include mq ('desktop'){
         margin-bottom: 32px;
@@ -246,6 +260,7 @@ color:$text-pink-color;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-top: 32px;
     
     @include mq('tablet'){
         display: flex;
@@ -256,20 +271,18 @@ color:$text-pink-color;
     }
   
 }
-.location{
-    margin-top: 32px;
-        margin-bottom: 10px;
-    
-    
-        
+
+.contacts__button--location{
+    margin-bottom: 10px;
+    margin-right: 0;
     @include mq('tablet'){
-        margin-top: 0;
+       
         margin-right: 14.5px;
         margin-bottom: 0;
     }
     @include mq ('desktop'){
-        margin-top: 0;
+        
         margin-right: 12px;
         margin-bottom: 0;
     }
-}
+} 
