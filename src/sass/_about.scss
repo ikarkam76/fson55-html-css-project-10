@@ -103,3 +103,45 @@
     font-size: 14px;
   }
 }
+// read more and button elements
+
+.about__subdescription--more {
+  display: none;
+  &.show-more {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    @include mq('tablet') {
+      margin-bottom: 40px;
+      margin-top: -25px;
+    }
+  }
+}
+
+.readMoreBtn {
+  transition: transform 250ms $timing-function;
+}
+.readMoreBtn.clicked .button__text--more {
+  display: none;
+}
+
+.readMoreBtn .button__text--less {
+  display: none;
+}
+.readMoreBtn.clicked .button__text--less {
+  display: inline;
+}
+
+.readMoreBtn:hover,
+.readMoreBtn:focus {
+  .button__icon--red {
+    transform: rotate(90deg);
+  }
+}
+
+.readMoreBtn.readMoreBtn.clicked:hover,
+.readMoreBtn.readMoreBtn.clicked:focus {
+  .button__icon--red {
+    transform: rotate(-90deg);
+  }
+}
