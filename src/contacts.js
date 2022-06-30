@@ -16,9 +16,7 @@ btns.forEach((el) => {
 });
 
 modalOverlay.addEventListener('click', (e) => {
-	console.log(e.target);
-
-	if (e.target == modalOverlay) {
+	if (e.target === modalOverlay) {
 		modalOverlay.classList.remove('contacts__modal-overlay--visible');
 		modals.forEach((el) => {
 			el.classList.remove('contacts__modal--visible');
