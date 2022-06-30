@@ -114,6 +114,11 @@
     @include mq('tablet') {
       margin-bottom: 40px;
       margin-top: -25px;
+      max-width: 334px;
+    }
+
+    @include mq('desktop') {
+      max-width: 463px;
     }
   }
 }
