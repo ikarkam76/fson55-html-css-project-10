@@ -29,5 +29,10 @@
     <symbol id="arrow" viewBox="0 0 26 32">
 <path fill="none"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
 </symbol>
+<symbol id="icon-modal-close" viewBox="0 0 32 32">
+            <path
+                d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z">
+            </path>
+        </symbol>
 </defs>
 </svg>
