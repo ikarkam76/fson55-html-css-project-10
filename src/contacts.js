@@ -1,17 +1,17 @@
-const btns = document.querySelectorAll('.contacts__button');
-const modalOverlay = document.querySelector('.modal-overlay ');
-const modals = document.querySelectorAll('.button__options');
+const btns = document.querySelectorAll('.contacts__modal-button');
+const modalOverlay = document.querySelector('.contacts__modal-overlay ');
+const modals = document.querySelectorAll('.contacts__modal');
 
 btns.forEach((el) => {
 	el.addEventListener('click', (e) => {
 		let path = e.currentTarget.getAttribute('data-path');
 
 		modals.forEach((el) => {
-			el.classList.remove('modal--visible');
+			el.classList.remove('contacts__modal--visible');
 		});
 
-		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
-		modalOverlay.classList.add('modal-overlay--visible');
+		document.querySelector(`[data-target="${path}"]`).classList.add('contacts__modal--visible');
+		modalOverlay.classList.add('contacts__modal-overlay--visible');
 	});
 });
 
@@ -19,9 +19,9 @@ modalOverlay.addEventListener('click', (e) => {
 	console.log(e.target);
 
 	if (e.target == modalOverlay) {
-		modalOverlay.classList.remove('modal-overlay--visible');
+		modalOverlay.classList.remove('contacts__modal-overlay--visible');
 		modals.forEach((el) => {
-			el.classList.remove('modal--visible');
+			el.classList.remove('contacts__modal--visible');
 		});
 	}
 });
