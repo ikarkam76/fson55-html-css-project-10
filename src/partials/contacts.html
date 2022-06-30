@@ -84,7 +84,11 @@
     </ul>
     <ul class="contacts__buttons">
       <li class="contacts__button--location">
-        <button class="button button--red location" type="button">
+        <button
+          class="button button--red location contacts__modal-button"
+          type="button"
+          data-path="form-popup"
+        >
           <span class="button__text button__text--white" data-modal-open
             >Our locations</span
           >
@@ -94,7 +98,11 @@
         </button>
       </li>
       <li class="contacts__button--franchise">
-        <button class="button button--white" type="button">
+        <button
+          class="button button--white contacts__modal-button"
+          data-path="me-popup"
+          type="button"
+        >
           <span class="button__text button__text--red">Franchise</span>
           <svg class="button__icon button__icon--red" width="8" height="9">
             <use href="./images/sprite.svg#arrow"></use>
@@ -103,12 +111,68 @@
       </li>
     </ul>
   </div>
-  <div class="contacts__backdrop is-hidden" data-modal> <div class="modal-wrapper">
-    <button class="modal-btn" type="button" data-modal-close>
-      <svg class="modal-btn__icon" width="17" height="17">
-        <use href="./images/sprite.svg#icon-modal-close"></use>
-      </svg>
-    </button></div>
- 
-  <!-- <script src="./contacts.js"></script> -->
+  <div class="contacts__modals">
+    <div class="contacts__modal-overlay">
+      <div class="contacts__modal modal--location" data-target="form-popup">
+        <h2 class="contacts__modal--title">Choose restaurant!</h2>
+        <form
+          autocomplete="off"
+          class="contacts-form__maps"
+          id="contacts__form"
+        >
+          <label class="form__map">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d189899.52699571417!2d-88.0321089!3d41.9534663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcc722fdf247b%3A0xd06068f5eb406a1a!2sDairy%20Queen!5e0!3m2!1sru!2sua!4v1656595782423!5m2!1sru!2sua"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </label>
+          <label class="form__map"
+            ><iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d387077.44986382365!2d-74.1890867!3d40.7170792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25808521a8257%3A0xb93b133caf311151!2sDairy%20Queen%20(Treat)!5e0!3m2!1sru!2sua!4v1656596452167!5m2!1sru!2sua"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </label>
+          <label class="form__map">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d423339.08884695364!2d-118.5735868!3d34.0095691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2955ab6c953d1%3A0x81c13640980f3421!2sDairy%20Queen%20(Treat)!5e0!3m2!1sru!2sua!4v1656597010914!5m2!1sru!2sua"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </label>
+        </form>
+        <form autocomplete="off" class="contacts-form__links">
+          <label class="links__item"
+            ><a href="https://goo.gl/maps/v5x3qfVbQWdXCnnG8" class="form__link"
+              >201 E Magnolia Blvd Ste 348, Burbank, CA 91502, USA</a
+            ></label
+          >
+          <label class="links__item">
+            <a href="https://goo.gl/maps/Pa5i65vLXXVEJQhP7" class="form__link">
+              6903 John F. Kennedy Blvd, North Bergen, NJ 07047, USA
+            </a></label
+          >
+          <label class="links__item"
+            ><a href="https://goo.gl/maps/28p7yzLWFmJFdM3C6" class="form__link">
+              5636 W Irving Park Rd, Chicago, IL 60634, USA</a
+            ></label
+          >
+        </form>
+      </div>
+      <div class="contacts__modal modal--franchise" data-target="me-popup">
+        Окно 2
+      </div>
+    </div>
+  </div>
+  <script src="./contacts.js"></script>
 </section>
