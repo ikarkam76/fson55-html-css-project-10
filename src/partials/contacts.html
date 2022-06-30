@@ -85,7 +85,9 @@
     <ul class="contacts__buttons">
       <li class="contacts__button--location">
         <button class="button button--red location" type="button">
-          <span class="button__text button__text--white">Our locations</span>
+          <span class="button__text button__text--white" data-modal-open
+            >Our locations</span
+          >
           <svg class="button__icon button__icon--white" width="8" height="9">
             <use href="./images/sprite.svg#arrow"></use>
           </svg>
@@ -101,5 +103,12 @@
       </li>
     </ul>
   </div>
-  <!-- <script src="./contacts.js"></script> -->
+  <div class="backdrop is-hidden" data-modal> <div class="modal-wrapper">
+    <button class="modal-btn" type="button" data-modal-close>
+      <svg class="modal-btn__icon" width="17" height="17">
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button></div>
+ 
+  <script src="./contacts.js"></script>
 </section>
