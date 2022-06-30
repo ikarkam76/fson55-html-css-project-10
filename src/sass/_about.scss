@@ -17,7 +17,7 @@
 .about__container {
   @include mq('tablet') {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   @include mq('desktop') {
@@ -108,7 +108,7 @@
 .about__subdescription--more {
   display: none;
   &.show-more {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
     margin-top: -10px;
     @include mq('tablet') {
